@@ -29,14 +29,6 @@ const NavBar = () => {
                 Home
             </a>
           </Link>
-          {/* <Link legacyBehavior href="/resources/new">
-            <a className="navbar-item is-size-5 has-text-weight-semibold">
-                Add
-            </a>
-          </Link>
-          <a className="navbar-item is-size-5 has-text-weight-semibold">
-            Features
-          </a> */}
         </div>
       </div>
     </div>
