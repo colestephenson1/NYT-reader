@@ -3,9 +3,8 @@ import SingleArticle from '../SingleArticle/SingleArticle'
 import styles from '../../../styles/HomeArticles.module.css'
 
 const HomeArticles = ({articles}) => {
-    console.log(articles)
     let count = 0
-    let mappedArticles = articles.filter(article => article.multimedia).slice(0, 3).map(article => {
+    let mappedArticles = articles.filter(article => article.multimedia && article.title).slice(0, 3).map(article => {
         count++
         const {title, byline, multimedia, url} = article
         return (

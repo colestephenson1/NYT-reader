@@ -16,11 +16,10 @@ export default function Home({articles}) {
 export async function getServerSideProps() {
   const resData = await fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=YMwGtcuTdYGINAxVqRw5puQauT6dAhD3')
   const data = await resData.json();
-  const filtered = data.results.filter(article => article.title)
 
     return {
       props: {
-        articles: filtered
+        articles: data.results
     }
   } 
 }
