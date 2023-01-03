@@ -13,7 +13,7 @@ export default function Home({articles}) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const resData = await fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=YMwGtcuTdYGINAxVqRw5puQauT6dAhD3')
   const data = await resData.json();
 
