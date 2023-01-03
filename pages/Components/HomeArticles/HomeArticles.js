@@ -7,13 +7,14 @@ const HomeArticles = ({articles}) => {
     let count = 0
     let mappedArticles = articles.filter(article => article.multimedia).slice(0, 3).map(article => {
         count++
-        const {title, byline, multimedia} = article
+        const {title, byline, multimedia, url} = article
         return (
             <SingleArticle
                 key={count}
                 title={title}
                 byline={byline}
                 image={multimedia[0].url}
+                url={url}
             />
         )
     })
