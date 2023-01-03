@@ -6,33 +6,19 @@ import 'bulma/css/bulma.min.css'
 const NavBar = () => {
   return (
     <nav className="navbar">
-    <div className="container">
-      <div className="navbar-brand">
-       <Link legacyBehavior href="../">
-        <a className="navbar-item" >
-          <h1>Daily Stories</h1>
-        </a>
-       </Link> 
-      </div>
-      <div id="navbarMenu" className="navbar-menu">
-        <div className="navbar-end">
-          <div className=" navbar-item">
-            <div className="control has-icons-left">
-              <input className="input is-rounded" type="email" placeholder="Search"/>
-              <span className="icon is-left">
-                <i className="fa fa-search"></i>
-              </span>
+        <div className="container">
+        <div id="navbarMenu" className="navbar-menu">
+            <Link legacyBehavior href="/"><a className="navbar-item is-active is-size-5 has-text-weight-bold">Home </a></Link>
+            <div className="navbar-end">
+                <Link legacyBehavior href="/"><a className="navbar-item is-active is-size-5 has-text-weight-semibold">Arts</a></Link>
+                <Link legacyBehavior href="/"><a className="navbar-item is-active is-size-5 has-text-weight-semibold">Sports</a></Link>
+                <Link legacyBehavior href="/"><a className="navbar-item is-active is-size-5 has-text-weight-semibold">Movies</a></Link>
+                <Link legacyBehavior href="/"><a className="navbar-item is-active is-size-5 has-text-weight-semibold"> U.S</a></Link>
+                <Link legacyBehavior href="/"><a className="navbar-item is-active is-size-5 has-text-weight-semibold">World</a></Link>
             </div>
-          </div>
-          <Link legacyBehavior href="/">
-            <a className="navbar-item is-active is-size-5 has-text-weight-semibold">
-                Home
-            </a>
-          </Link>
         </div>
-      </div>
-    </div>
-  </nav>
+        </div>
+    </nav>
   )
 }
 
