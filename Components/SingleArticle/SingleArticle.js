@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/SingleArticle.module.css'
+import styles from '../../styles/SingleArticle.module.css'
 
 const SingleArticle = ({title, byline, image, url}) => {
 

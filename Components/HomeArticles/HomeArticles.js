@@ -1,8 +1,8 @@
 import React from 'react'
 import SingleArticle from '../SingleArticle/SingleArticle'
-import styles from '../../../styles/HomeArticles.module.css'
+import styles from '../../styles/HomeArticles.module.css'
 
-export const HomeArticles = ({articles}) => {
+const HomeArticles = ({articles}) => {
     let count = 0
     let mappedArticles = articles.filter(article => article.multimedia && article.title).slice(0, 3).map(article => {
         count++
@@ -26,3 +26,5 @@ export const HomeArticles = ({articles}) => {
     </div>
   )
 }
+
+export default HomeArticles
