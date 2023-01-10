@@ -1,5 +1,7 @@
 # NYT-reader
 
+<img width="1436" alt="Screen Shot 2023-01-09 at 9 51 41 PM" src="https://user-images.githubusercontent.com/102827145/211464826-505cd4a4-e8bc-4c3e-96a2-a5dee8d3376a.png">
+
 ## Table of Contents
   - [Introduction](#introduction)
   - [Technologies](#technologies)
